@@ -50,14 +50,17 @@ html, body {
     background-size: cover;
     min-height: 750px;
     min-width: 100%;   
+    /* opacity: 0.3; */
 }
 
-.hero-text h2{
+/* .hero-text h2{
     font-family: fantasy;
-}
+} */
 
 .hero-image h2 {
     font-family: 'Anton', sans-serif;
+    color: antiquewhite;
+    /* opacity: 0.3; */
 }
 /* Flexbox */
 .center-center{
