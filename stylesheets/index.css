@@ -69,3 +69,12 @@ html, body {
     align-items: center;
     /* font-family: 'Anton', sans-serif; */
 }
+
+/* container determines max size */
+.profile-image {
+    width: 150px;
+}
+/* img adapts to container */
+.profile-image img{
+    width:100%;
+}
