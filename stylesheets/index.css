@@ -6,6 +6,9 @@ html, body {
     margin: 0;
     /* set margin & padding to 0 so that elements stratch to edge of browser window */
 }
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .header-text {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -70,11 +73,54 @@ html, body {
     /* font-family: 'Anton', sans-serif; */
 }
 
+.about-me {
+    padding: 0 8px;
+}
+
 /* container determines max size */
 .profile-image {
-    width: 150px;
+    width: 130px;
+    /* another centering technique */
+    margin: 0 auto;
 }
 /* img adapts to container */
+/* constrain either by width or height not both
+that messes up the aspect ratio */
 .profile-image img{
     width:100%;
+    border-radius: 50%;
+}
+/* 
+Responsive Web Design Implementation
+aka Media Queries!
+if/else statements for your CSS
+*/
+
+/* 
+Common "breakpoints":
+S, M, L, XL, Party Size
+500px
+768px
+1024px
+1200px
+1400px
+*/
+
+@media screen and (min-width: 500px){
+    .profile-image {
+        outline: 5px solid red;
+    }
+
+}
+@media screen and (min-width: 768){
+    
+}
+@media screen and (min-width: 1024px){
+    
+}
+@media screen and (min-width: 1200px){
+    
+}
+@media screen and (min-width: 1400px){
+    
 }
