@@ -126,6 +126,7 @@ S, M, L, XL, Party Size
     /* Anywhere you want to shift the layout, add a wrapper div(or section) and turn it into a flex parent(aka "flex container") */
     .about-me {
         display: flex;
+        flex-direction: row-reverse
     }
     /* "descendant" selector */
     .about-me div {
@@ -150,8 +151,11 @@ S, M, L, XL, Party Size
         width: 30%;
     }
 }
-@media screen and (min-width: 768){
-    
+@media screen and (min-width: 700px){
+    .hero-text h2{
+        font-size: 48px;
+        /* outline: 1px solid red; */
+    }
 }
 @media screen and (min-width: 1024px){
     
