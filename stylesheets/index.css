@@ -1,3 +1,11 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 /* html{
     font-size: 30px;
 } */
@@ -107,17 +115,15 @@ S, M, L, XL, Party Size
 */
 
 @media screen and (min-width: 500px){
-    .profile-image {
-        /* outline: 5px solid red; */
-        width:200px;
-    }
-
+    
     /* 
     1. Turn the .about-me section into a flex container
     2. Set the width of .about-me-container so that it takes up 70%
     3. Set the width of .profile-image so that it looks good.
     4. Tweak the sizes because it'll look jacked up on the first few attempts.
     */
+    
+    /* Anywhere you want to shift the layout, add a wrapper div(or section) and turn it into a flex parent(aka "flex container") */
     .about-me {
         display: flex;
     }
@@ -131,6 +137,18 @@ S, M, L, XL, Party Size
         outline: 1px solid red;
     }
 
+    .about-me-container {
+        /* box-sizing: border-box makes this behave in a sane way.
+        without it, the .about-me-container takes up 70% + 18px */
+        width: 70%;
+        padding-right: 18px;
+    }
+    
+    .profile-image {
+        /* outline: 5px solid red; */
+        /* width: 200px; */
+        width: 30%;
+    }
 }
 @media screen and (min-width: 768){
     
