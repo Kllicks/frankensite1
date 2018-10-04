@@ -113,6 +113,11 @@ that messes up the aspect ratio */
     padding: 0 8px;
 }
 
+.contact-links a:hover .fab,
+.contact-links a:active .fab{
+    color: red;
+}
+
 
 /* 
 Responsive Web Design Implementation
