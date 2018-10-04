@@ -98,6 +98,15 @@ that messes up the aspect ratio */
     width:100%;
     border-radius: 50%;
 }
+
+.contact-links {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px 12px;
+}
+
+.contact-links i {
+    color: white;
+}
 /* 
 Responsive Web Design Implementation
 aka Media Queries!
