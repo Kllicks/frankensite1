@@ -111,11 +111,17 @@ that messes up the aspect ratio */
     color: white;
     font-size: 36px;
     padding: 0 8px;
+    transition: all .5s;
+}
+
+.contact-links a:hover {
+    cursor: pointer;
 }
 
 .contact-links a:hover .fab,
 .contact-links a:active .fab{
     color: red;
+    font-size: 48px;
 }
 
 
