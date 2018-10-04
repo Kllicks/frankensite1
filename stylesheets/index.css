@@ -102,11 +102,18 @@ that messes up the aspect ratio */
 .contact-links {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 8px 12px;
+
+    display: flex;
+    justify-content: flex-end;
 }
 
-.contact-links i {
+.contact-links .fab {
     color: white;
+    font-size: 36px;
+    padding: 0 8px;
 }
+
+
 /* 
 Responsive Web Design Implementation
 aka Media Queries!
